@@ -80,4 +80,8 @@ const getTopStories = async () => {
   });
 };
 
-getTopStories();
+document.addEventListener("keydown", function (event) {
+  if (event.code == "Enter") {
+    getTopStories();
+  }
+});
